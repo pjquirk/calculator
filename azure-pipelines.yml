@@ -16,6 +16,5 @@ steps:
   displayName: Publish Logs
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)/src/CalculatorUnitTests'
-    ArtifactName: '$(System.JobAttempt)-Logs $(Build.BuildNumber)'
-    publishLocation: Container
-  continueOnError: true
+    ArtifactName: 'Logs $(Build.BuildNumber)'
+    publishLocation: 'Container'
